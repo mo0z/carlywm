@@ -1,4 +1,4 @@
-/** \file 
+O/** \file 
  *
  *  @author Patrick Murphy
  *
@@ -100,7 +100,7 @@ static void grab_keys();
 static void grab_buttons();
 static void cycle_layouts();
 static void send_destroy_msg();
-static void destroy_notify_event();   // NOTE: any *Event functions will need an xevent as a parameter // OR NOT!
+static void destroy_notify_event();   
 static void key_press_event();
 static void button_press_event();
 static void motion_notify_event();
