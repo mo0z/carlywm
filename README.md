@@ -1,2 +1,2 @@
 # capstonewm
-![...](/home/pjm/capstonewm/screenshots/wm.jpg?raw=true "wm")
+![...](https://raw.github.com/p-j-m/capstonewm/screenshots/wm.jpg)
