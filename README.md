@@ -1,2 +1,2 @@
 # capstonewm
-![...](https://raw.github.com/p-j-m/capstonewm/screenshots/wm.jpg)
+![...](https://github.com/p-j-m/capstonewm/blob/master/screenshots/wm/jpg)
