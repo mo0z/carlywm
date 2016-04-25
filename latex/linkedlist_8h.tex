@@ -1,0 +1,87 @@
+\hypertarget{linkedlist_8h}{}\section{linkedlist.\+h File Reference}
+\label{linkedlist_8h}\index{linkedlist.\+h@{linkedlist.\+h}}
+{\ttfamily \#include $<$X11/\+Xlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+Include dependency graph for linkedlist.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{linkedlist_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{linkedlist_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structNode}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structNode}{Node} \hyperlink{linkedlist_8h_a3b09f37e675bcd48a01bf22155996872}{Node}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{linkedlist_8h_a46eaa6eca85d2d9a4c018a06ccaaeaf4}{insert} (\hyperlink{structNode}{Node} $\ast$new)
+\item 
+void \hyperlink{linkedlist_8h_a2feada6f7240f6f4e85116fb1301c0a9}{delete} (Window win\+I\+D)
+\item 
+int \hyperlink{linkedlist_8h_af61710f5d0837eacc50c2ecf8548cacd}{is\+In\+List} (Window win\+I\+D)
+\item 
+\hyperlink{structNode}{Node} $\ast$ \hyperlink{linkedlist_8h_a43cec99c147b276613e6e79abceeb4a7}{get\+Node\+From\+I\+D} (Window win\+I\+D)
+\item 
+void \hyperlink{linkedlist_8h_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{linkedlist_8h_a3b09f37e675bcd48a01bf22155996872}{}\index{linkedlist.\+h@{linkedlist.\+h}!Node@{Node}}
+\index{Node@{Node}!linkedlist.\+h@{linkedlist.\+h}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Node} {\bf Node}}\label{linkedlist_8h_a3b09f37e675bcd48a01bf22155996872}
+
+
+\subsection{Function Documentation}
+\hypertarget{linkedlist_8h_a2feada6f7240f6f4e85116fb1301c0a9}{}\index{linkedlist.\+h@{linkedlist.\+h}!delete@{delete}}
+\index{delete@{delete}!linkedlist.\+h@{linkedlist.\+h}}
+\subsubsection[{delete}]{\setlength{\rightskip}{0pt plus 5cm}void delete (
+\begin{DoxyParamCaption}
+\item[{Window}]{win\+I\+D}
+\end{DoxyParamCaption}
+)}\label{linkedlist_8h_a2feada6f7240f6f4e85116fb1301c0a9}
+Delete a \hyperlink{structNode}{Node} from the list in the event that a window is detroyed given it\textquotesingle{}s I\+D. Update the total count of mapped windows. \hypertarget{linkedlist_8h_a1e5b20fed15743656bb6d2e6a6ea6269}{}\index{linkedlist.\+h@{linkedlist.\+h}!display@{display}}
+\index{display@{display}!linkedlist.\+h@{linkedlist.\+h}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{linkedlist_8h_a1e5b20fed15743656bb6d2e6a6ea6269}
+Display the list in text, for debugging purposes. \hypertarget{linkedlist_8h_a43cec99c147b276613e6e79abceeb4a7}{}\index{linkedlist.\+h@{linkedlist.\+h}!get\+Node\+From\+I\+D@{get\+Node\+From\+I\+D}}
+\index{get\+Node\+From\+I\+D@{get\+Node\+From\+I\+D}!linkedlist.\+h@{linkedlist.\+h}}
+\subsubsection[{get\+Node\+From\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ get\+Node\+From\+I\+D (
+\begin{DoxyParamCaption}
+\item[{Window}]{win\+I\+D}
+\end{DoxyParamCaption}
+)}\label{linkedlist_8h_a43cec99c147b276613e6e79abceeb4a7}
+Given the window\textquotesingle{}s win\+I\+D, return the \hyperlink{structNode}{Node} that holds it. If it is not found, return N\+U\+L\+L. \hypertarget{linkedlist_8h_a46eaa6eca85d2d9a4c018a06ccaaeaf4}{}\index{linkedlist.\+h@{linkedlist.\+h}!insert@{insert}}
+\index{insert@{insert}!linkedlist.\+h@{linkedlist.\+h}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{new}
+\end{DoxyParamCaption}
+)}\label{linkedlist_8h_a46eaa6eca85d2d9a4c018a06ccaaeaf4}
+Insert a new \hyperlink{structNode}{Node} into the list and update the total count of mapped windows. Note that a node is always inserted at the front of the list. \hypertarget{linkedlist_8h_af61710f5d0837eacc50c2ecf8548cacd}{}\index{linkedlist.\+h@{linkedlist.\+h}!is\+In\+List@{is\+In\+List}}
+\index{is\+In\+List@{is\+In\+List}!linkedlist.\+h@{linkedlist.\+h}}
+\subsubsection[{is\+In\+List}]{\setlength{\rightskip}{0pt plus 5cm}int is\+In\+List (
+\begin{DoxyParamCaption}
+\item[{Window}]{win\+I\+D}
+\end{DoxyParamCaption}
+)}\label{linkedlist_8h_af61710f5d0837eacc50c2ecf8548cacd}
+Return 1 if the window with the given win\+I\+D is in the list, otherwise return 0. 

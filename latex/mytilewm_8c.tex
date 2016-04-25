@@ -1,0 +1,514 @@
+\hypertarget{mytilewm_8c}{}\section{mytilewm.\+c File Reference}
+\label{mytilewm_8c}\index{mytilewm.\+c@{mytilewm.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$unistd.\+h$>$}\\*
+{\ttfamily \#include $<$X11/\+Xlib.\+h$>$}\\*
+{\ttfamily \#include $<$X11/\+Xutil.\+h$>$}\\*
+{\ttfamily \#include $<$X11/\+Xos.\+h$>$}\\*
+{\ttfamily \#include $<$X11/\+Xatom.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}linkedlist.\+h\char`\"{}}\\*
+Include dependency graph for mytilewm.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mytilewm_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structWorkspace}{Workspace}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mytilewm_8c_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{M\+A\+X}(a,  b)~((a) $>$ (b) ? (a) \+: (b))
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8}{Tiling\+Algorithms} \{ \\*
+\hyperlink{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a3c25942291ac61d0c3611824f29cf928}{V\+S\+T\+A\+C\+K}, 
+\hyperlink{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a780bc5128a196fa7905fe6be80a428a3}{H\+S\+T\+A\+C\+K}, 
+\hyperlink{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8ae0ef4285be2af9213b94b78159459698}{C\+O\+L\+S}, 
+\hyperlink{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a5f039f23ee85ddea038ca1ab88ca6755}{F\+U\+L\+L\+S\+C\+R\+E\+E\+N}, 
+\\*
+\hyperlink{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8ae064b4a6beaf71bfa759f063358ca104}{E\+X\+P\+E\+R\+I\+M\+E\+N\+T\+A\+L}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{mytilewm_8c_a5bb09e5de8bbbf8a29a08a77a560f295}{decrease\+Gaps} ()
+\item 
+static void \hyperlink{mytilewm_8c_ac95c2429dd3c26f2e268fa99e2c216f7}{increase\+Gaps} ()
+\item 
+static void \hyperlink{mytilewm_8c_ae3034c6b044829ed4e022f982728a5fa}{increase\+Main} ()
+\item 
+static void \hyperlink{mytilewm_8c_ae1187851b3af6c1ccf8e5396abb66a12}{decrease\+Main} ()
+\item 
+static void \hyperlink{mytilewm_8c_a258c78014043054d707f52202bc55929}{update\+Focus} ()
+\item 
+static void \hyperlink{mytilewm_8c_add501fd2303b12a79d769a71ae92adab}{focus\+Next} ()
+\item 
+static void \hyperlink{mytilewm_8c_ac132bc7aae05998ece3ec7cce99d3bd2}{focus\+Prev} ()
+\item 
+static void \hyperlink{mytilewm_8c_a0754204d6bad58bb8f7d3e05d938b6a8}{move\+Next} (\hyperlink{structNode}{Node} $\ast$current)
+\item 
+static void \hyperlink{mytilewm_8c_a82c52a525194d607a73acff738eb3fe4}{move\+Prev} (\hyperlink{structNode}{Node} $\ast$current)
+\item 
+static void \hyperlink{mytilewm_8c_a4862f865d956a758ae7f9d9d77660474}{float\+All\+Windows} ()
+\item 
+static int \hyperlink{mytilewm_8c_a6b49a9433aa79624109221549b0a5a25}{get\+Num\+Floating} ()
+\item 
+static void \hyperlink{mytilewm_8c_adf450a9a061d173710964aa7b86598b1}{tile} ()
+\item 
+static void \hyperlink{mytilewm_8c_ab1ae7940ad97d3a8f1102379e41d99b4}{force\+Tile} ()
+\item 
+static void \hyperlink{mytilewm_8c_a548635f166185d2fce65bf6a6d33bf5a}{experimental} ()
+\item 
+static void \hyperlink{mytilewm_8c_aaa22252f63245b6620b8a912d327261f}{vstack} ()
+\item 
+static void \hyperlink{mytilewm_8c_aa021adb516c76d35050d5595d08193ca}{hstack} ()
+\item 
+static void \hyperlink{mytilewm_8c_a3251f37cb11bd7dca82c6f8b225b0792}{columns} ()
+\item 
+static void \hyperlink{mytilewm_8c_a6a75e9b62aab932c6c357262257d370f}{grab\+Keys} ()
+\item 
+static void \hyperlink{mytilewm_8c_a01bd2b6f5f8a5acf7a702ece451b6f1b}{grab\+Buttons} ()
+\item 
+static void \hyperlink{mytilewm_8c_a597da1b6c0b49c7012fb605bbbf57434}{cycle\+Layouts} ()
+\item 
+static void \hyperlink{mytilewm_8c_a9e3b20d32b8ac810123bf75dc5247410}{send\+Destroy\+Message} ()
+\item 
+static void \hyperlink{mytilewm_8c_a39a4d6ec6164d2e5b961bbf1f922fd6c}{destroy\+Notify\+Event} ()
+\item 
+static void \hyperlink{mytilewm_8c_a5912ffa4b667b245b407b3b5e7a86a2a}{key\+Press\+Event} ()
+\item 
+static void \hyperlink{mytilewm_8c_a3f2fa4145cdd4e9fc79bb467ccb1e298}{button\+Press\+Event} ()
+\item 
+static void \hyperlink{mytilewm_8c_a1df6ccbcef300ae05e460104bb685f5b}{motion\+Notify\+Event} ()
+\item 
+static void \hyperlink{mytilewm_8c_aa283fbc81ec1beab2534b270f64f3526}{button\+Release\+Event} ()
+\item 
+static void \hyperlink{mytilewm_8c_a7634a382292bb511acf06c941bd66ed6}{map\+Request\+Event} ()
+\item 
+static void \hyperlink{mytilewm_8c_a57db02c4fba561c382037740b4eadd64}{configure\+Request\+Event} ()
+\item 
+static void \hyperlink{mytilewm_8c_a24b48bcda29b6ca2565c3cac5a09c13f}{swap\+Window\+Attributes} (Window x, Window y)
+\item 
+static unsigned long \hyperlink{mytilewm_8c_a8d5e042564d0c8ccad380cc11aa1485c}{get\+Pixel} ()
+\item 
+static int \hyperlink{mytilewm_8c_ab791e47d9d3d5fb48ad23b81b322da73}{get\+Key\+Code} (const char $\ast$key\+Name)
+\item 
+void \hyperlink{mytilewm_8c_a47dd1475ea792c2dacf0a4f3983bcc85}{fullscreen} ()
+\item 
+unsigned long \hyperlink{mytilewm_8c_a2970639e0c02e5990b3bd674d98a1785}{get\+Pixel} (const char $\ast$color\+Code)
+\item 
+int \hyperlink{mytilewm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structNode}{Node} $\ast$ \hyperlink{mytilewm_8c_a2addc5f5fab651284199528b83cd61c8}{first}
+\item 
+\hyperlink{structNode}{Node} $\ast$ \hyperlink{mytilewm_8c_a16ac028724e4fd7016faa38928658477}{last}
+\item 
+\hyperlink{structNode}{Node} $\ast$ \hyperlink{mytilewm_8c_a72b81f09bfa24192687a65d96f71705f}{curr\+Focus}
+\item 
+struct \hyperlink{structWorkspace}{Workspace} \hyperlink{mytilewm_8c_aeb497ff04fbbc6b79cece8980bf2ef36}{workspaces} \mbox{[}\hyperlink{config_8h_a7ed7c989849bb05c71d617e73cd05311}{N\+U\+M\+\_\+\+W\+O\+R\+K\+S\+P\+A\+C\+E\+S}\mbox{]}
+\item 
+Display $\ast$ \hyperlink{mytilewm_8c_a7d43b3edf58f8d85a89852ab95b740f6}{dpy}
+\item 
+int \hyperlink{mytilewm_8c_a3109b0889cec9f0de874a2bdc1f84372}{screen}
+\item 
+Window \hyperlink{mytilewm_8c_a67efd2aa4387dcb1b33df1f044512a16}{root}
+\item 
+int \hyperlink{mytilewm_8c_a892b640a9383f2428cade971e1164819}{window\+Count}
+\item 
+int \hyperlink{mytilewm_8c_ab9f00ec98f2f4c985581d76b371229e0}{G\+A\+P}
+\item 
+int \hyperlink{mytilewm_8c_ae615d5edd10587517b0daa1fe5179538}{P\+A\+N}
+\item 
+unsigned \hyperlink{mytilewm_8c_a5645d18f6655d7fe1c4e9295024d40a1}{screen\+Height}
+\item 
+unsigned \hyperlink{mytilewm_8c_a6a5a4b0e8a4d8d3c4c28d75f38365702}{screen\+Width}
+\item 
+X\+Event \hyperlink{mytilewm_8c_ad695247486d89834d82f80cea4f163dd}{event}
+\item 
+X\+Window\+Attributes \hyperlink{mytilewm_8c_a30c736fe26c351d7527f97c07646d70d}{attrs}
+\item 
+X\+Button\+Event \hyperlink{mytilewm_8c_a9420e02878dee7e6c5c82b04f33ecdc2}{start}
+\item 
+X\+Compose\+Status \hyperlink{mytilewm_8c_a7ab2edaf0279b16f5da849b9acb7fdcb}{compose}
+\item 
+char \hyperlink{mytilewm_8c_a5819dbc2d305e99e930c734a0d28bc3b}{buffer} \mbox{[}20\mbox{]}
+\item 
+int \hyperlink{mytilewm_8c_a52a25bb51473f2562b9d2b921d68ac52}{buffer\+Len} = 20
+\item 
+Key\+Sym \hyperlink{mytilewm_8c_a30c30b66c984b57e5f0c7e8148c49d43}{keysym}
+\item 
+char $\ast$ \hyperlink{mytilewm_8c_a28c6802e719f9b9ec42e06af122b1b48}{key\+A\+S\+C\+I\+I}
+\item 
+enum \hyperlink{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8}{Tiling\+Algorithms} \hyperlink{mytilewm_8c_a6687b37b92a0d3ec90d179844f7c4e84}{layout\+Mode}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Patrick Murphy 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{mytilewm_8c_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{}\index{mytilewm.\+c@{mytilewm.\+c}!M\+A\+X@{M\+A\+X}}
+\index{M\+A\+X@{M\+A\+X}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{M\+A\+X}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X(
+\begin{DoxyParamCaption}
+\item[{}]{a, }
+\item[{}]{b}
+\end{DoxyParamCaption}
+)~((a) $>$ (b) ? (a) \+: (b))}\label{mytilewm_8c_afa99ec4acc4ecb2dc3c2d05da15d0e3f}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8}{}\index{mytilewm.\+c@{mytilewm.\+c}!Tiling\+Algorithms@{Tiling\+Algorithms}}
+\index{Tiling\+Algorithms@{Tiling\+Algorithms}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{Tiling\+Algorithms}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Tiling\+Algorithms}}\label{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{V\+S\+T\+A\+C\+K@{V\+S\+T\+A\+C\+K}!mytilewm.\+c@{mytilewm.\+c}}\index{mytilewm.\+c@{mytilewm.\+c}!V\+S\+T\+A\+C\+K@{V\+S\+T\+A\+C\+K}}\item[{\em 
+\hypertarget{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a3c25942291ac61d0c3611824f29cf928}{}V\+S\+T\+A\+C\+K\label{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a3c25942291ac61d0c3611824f29cf928}
+}]\index{H\+S\+T\+A\+C\+K@{H\+S\+T\+A\+C\+K}!mytilewm.\+c@{mytilewm.\+c}}\index{mytilewm.\+c@{mytilewm.\+c}!H\+S\+T\+A\+C\+K@{H\+S\+T\+A\+C\+K}}\item[{\em 
+\hypertarget{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a780bc5128a196fa7905fe6be80a428a3}{}H\+S\+T\+A\+C\+K\label{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a780bc5128a196fa7905fe6be80a428a3}
+}]\index{C\+O\+L\+S@{C\+O\+L\+S}!mytilewm.\+c@{mytilewm.\+c}}\index{mytilewm.\+c@{mytilewm.\+c}!C\+O\+L\+S@{C\+O\+L\+S}}\item[{\em 
+\hypertarget{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8ae0ef4285be2af9213b94b78159459698}{}C\+O\+L\+S\label{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8ae0ef4285be2af9213b94b78159459698}
+}]\index{F\+U\+L\+L\+S\+C\+R\+E\+E\+N@{F\+U\+L\+L\+S\+C\+R\+E\+E\+N}!mytilewm.\+c@{mytilewm.\+c}}\index{mytilewm.\+c@{mytilewm.\+c}!F\+U\+L\+L\+S\+C\+R\+E\+E\+N@{F\+U\+L\+L\+S\+C\+R\+E\+E\+N}}\item[{\em 
+\hypertarget{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a5f039f23ee85ddea038ca1ab88ca6755}{}F\+U\+L\+L\+S\+C\+R\+E\+E\+N\label{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8a5f039f23ee85ddea038ca1ab88ca6755}
+}]\index{E\+X\+P\+E\+R\+I\+M\+E\+N\+T\+A\+L@{E\+X\+P\+E\+R\+I\+M\+E\+N\+T\+A\+L}!mytilewm.\+c@{mytilewm.\+c}}\index{mytilewm.\+c@{mytilewm.\+c}!E\+X\+P\+E\+R\+I\+M\+E\+N\+T\+A\+L@{E\+X\+P\+E\+R\+I\+M\+E\+N\+T\+A\+L}}\item[{\em 
+\hypertarget{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8ae064b4a6beaf71bfa759f063358ca104}{}E\+X\+P\+E\+R\+I\+M\+E\+N\+T\+A\+L\label{mytilewm_8c_a956154413ecb0b5bfa2bb8302116a1e8ae064b4a6beaf71bfa759f063358ca104}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{mytilewm_8c_a3f2fa4145cdd4e9fc79bb467ccb1e298}{}\index{mytilewm.\+c@{mytilewm.\+c}!button\+Press\+Event@{button\+Press\+Event}}
+\index{button\+Press\+Event@{button\+Press\+Event}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{button\+Press\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void button\+Press\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a3f2fa4145cdd4e9fc79bb467ccb1e298}
+For the handling of a \textquotesingle{}Button\+Press\textquotesingle{} X\+Event when it is received in the event loop. \hypertarget{mytilewm_8c_aa283fbc81ec1beab2534b270f64f3526}{}\index{mytilewm.\+c@{mytilewm.\+c}!button\+Release\+Event@{button\+Release\+Event}}
+\index{button\+Release\+Event@{button\+Release\+Event}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{button\+Release\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void button\+Release\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_aa283fbc81ec1beab2534b270f64f3526}
+For the handling of a \textquotesingle{}Button\+Release\textquotesingle{} X\+Event when it is received in the event loop. \hypertarget{mytilewm_8c_a3251f37cb11bd7dca82c6f8b225b0792}{}\index{mytilewm.\+c@{mytilewm.\+c}!columns@{columns}}
+\index{columns@{columns}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{columns}]{\setlength{\rightskip}{0pt plus 5cm}void columns (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a3251f37cb11bd7dca82c6f8b225b0792}
+Tile windows in such a way that all windows are equally sized, in a column fashion.
+
+-- Fix issues in placement of windows \hypertarget{mytilewm_8c_a57db02c4fba561c382037740b4eadd64}{}\index{mytilewm.\+c@{mytilewm.\+c}!configure\+Request\+Event@{configure\+Request\+Event}}
+\index{configure\+Request\+Event@{configure\+Request\+Event}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{configure\+Request\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+Request\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a57db02c4fba561c382037740b4eadd64}
+For the handling of a \textquotesingle{}Configure\+Request\textquotesingle{} X\+Event when it is received in the event loop. I was having issues with applications crashing after being mapped until I looked at some other window managers. Apparently, some programs must be configured with their desired configurations before it\textquotesingle{}s \textquotesingle{}safe\textquotesingle{} to impose our own. So, this function applies the application\textquotesingle{}s desired configuration and T\+H\+E\+N tiles (effectively undoing all that was set) to keep programs from crashing. \hypertarget{mytilewm_8c_a597da1b6c0b49c7012fb605bbbf57434}{}\index{mytilewm.\+c@{mytilewm.\+c}!cycle\+Layouts@{cycle\+Layouts}}
+\index{cycle\+Layouts@{cycle\+Layouts}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{cycle\+Layouts}]{\setlength{\rightskip}{0pt plus 5cm}void cycle\+Layouts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a597da1b6c0b49c7012fb605bbbf57434}
+Cycle available tiling layouts. If there are windows to tile, \hyperlink{mytilewm_8c_adf450a9a061d173710964aa7b86598b1}{tile()} is called to apply the new layout. \hypertarget{mytilewm_8c_a5bb09e5de8bbbf8a29a08a77a560f295}{}\index{mytilewm.\+c@{mytilewm.\+c}!decrease\+Gaps@{decrease\+Gaps}}
+\index{decrease\+Gaps@{decrease\+Gaps}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{decrease\+Gaps}]{\setlength{\rightskip}{0pt plus 5cm}void decrease\+Gaps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a5bb09e5de8bbbf8a29a08a77a560f295}
+Decrease the value of the G\+A\+P value (gaps between tiled windows) by G\+A\+P\+S\+\_\+\+I\+N\+C, and apply the change by retiling.
+
+-- Add bounds checking \hypertarget{mytilewm_8c_ae1187851b3af6c1ccf8e5396abb66a12}{}\index{mytilewm.\+c@{mytilewm.\+c}!decrease\+Main@{decrease\+Main}}
+\index{decrease\+Main@{decrease\+Main}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{decrease\+Main}]{\setlength{\rightskip}{0pt plus 5cm}void decrease\+Main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_ae1187851b3af6c1ccf8e5396abb66a12}
+Decrease the size of the main window (horizontally) while tiled, then retile. \hypertarget{mytilewm_8c_a39a4d6ec6164d2e5b961bbf1f922fd6c}{}\index{mytilewm.\+c@{mytilewm.\+c}!destroy\+Notify\+Event@{destroy\+Notify\+Event}}
+\index{destroy\+Notify\+Event@{destroy\+Notify\+Event}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{destroy\+Notify\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void destroy\+Notify\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a39a4d6ec6164d2e5b961bbf1f922fd6c}
+For the handling of a \textquotesingle{}Destroy\+Notify\textquotesingle{} X\+Event when it is received in the event loop. \hypertarget{mytilewm_8c_a548635f166185d2fce65bf6a6d33bf5a}{}\index{mytilewm.\+c@{mytilewm.\+c}!experimental@{experimental}}
+\index{experimental@{experimental}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{experimental}]{\setlength{\rightskip}{0pt plus 5cm}void experimental (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a548635f166185d2fce65bf6a6d33bf5a}
+\hypertarget{mytilewm_8c_a4862f865d956a758ae7f9d9d77660474}{}\index{mytilewm.\+c@{mytilewm.\+c}!float\+All\+Windows@{float\+All\+Windows}}
+\index{float\+All\+Windows@{float\+All\+Windows}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{float\+All\+Windows}]{\setlength{\rightskip}{0pt plus 5cm}void float\+All\+Windows (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a4862f865d956a758ae7f9d9d77660474}
+Float every window mapped to the screen.
+
+-- Handle the issue of losing window focus indication after moving -- Handle issue of many windows causing offscreen stacking -- This command ought to be M\+O\+D + S\+H\+I\+F\+T + F \hypertarget{mytilewm_8c_add501fd2303b12a79d769a71ae92adab}{}\index{mytilewm.\+c@{mytilewm.\+c}!focus\+Next@{focus\+Next}}
+\index{focus\+Next@{focus\+Next}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{focus\+Next}]{\setlength{\rightskip}{0pt plus 5cm}void focus\+Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_add501fd2303b12a79d769a71ae92adab}
+Change focus to the next window in the list (if windows exist). This involves setting the input focus with X\+Set\+Input\+Focus(), updating \textquotesingle{}curr\+Focus\textquotesingle{}, updating various window borders, and raising the newly focused window. \hypertarget{mytilewm_8c_ac132bc7aae05998ece3ec7cce99d3bd2}{}\index{mytilewm.\+c@{mytilewm.\+c}!focus\+Prev@{focus\+Prev}}
+\index{focus\+Prev@{focus\+Prev}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{focus\+Prev}]{\setlength{\rightskip}{0pt plus 5cm}void focus\+Prev (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_ac132bc7aae05998ece3ec7cce99d3bd2}
+Change focus to the previous window in the list (if windows exist). This involves setting the input focus with X\+Set\+Input\+Focus(), updating \textquotesingle{}curr\+Focus\textquotesingle{}, updating various window borders, and raising the newly focused window. \hypertarget{mytilewm_8c_ab1ae7940ad97d3a8f1102379e41d99b4}{}\index{mytilewm.\+c@{mytilewm.\+c}!force\+Tile@{force\+Tile}}
+\index{force\+Tile@{force\+Tile}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{force\+Tile}]{\setlength{\rightskip}{0pt plus 5cm}void force\+Tile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_ab1ae7940ad97d3a8f1102379e41d99b4}
+Force a retile of all windows mapped to the screen. \hypertarget{mytilewm_8c_a47dd1475ea792c2dacf0a4f3983bcc85}{}\index{mytilewm.\+c@{mytilewm.\+c}!fullscreen@{fullscreen}}
+\index{fullscreen@{fullscreen}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{fullscreen}]{\setlength{\rightskip}{0pt plus 5cm}void fullscreen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{mytilewm_8c_a47dd1475ea792c2dacf0a4f3983bcc85}
+Give the window full screen space (minus any gaps or borders)
+
+-- minus the borders \hypertarget{mytilewm_8c_ab791e47d9d3d5fb48ad23b81b322da73}{}\index{mytilewm.\+c@{mytilewm.\+c}!get\+Key\+Code@{get\+Key\+Code}}
+\index{get\+Key\+Code@{get\+Key\+Code}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{get\+Key\+Code}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Key\+Code (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{key\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_ab791e47d9d3d5fb48ad23b81b322da73}
+Given the key name, convert to a Keysym, then convert to and return the Keycode. \hypertarget{mytilewm_8c_a6b49a9433aa79624109221549b0a5a25}{}\index{mytilewm.\+c@{mytilewm.\+c}!get\+Num\+Floating@{get\+Num\+Floating}}
+\index{get\+Num\+Floating@{get\+Num\+Floating}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{get\+Num\+Floating}]{\setlength{\rightskip}{0pt plus 5cm}int get\+Num\+Floating (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a6b49a9433aa79624109221549b0a5a25}
+Return the number of windows in the list currently marked as floating. \hypertarget{mytilewm_8c_a8d5e042564d0c8ccad380cc11aa1485c}{}\index{mytilewm.\+c@{mytilewm.\+c}!get\+Pixel@{get\+Pixel}}
+\index{get\+Pixel@{get\+Pixel}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{get\+Pixel}]{\setlength{\rightskip}{0pt plus 5cm}static unsigned long get\+Pixel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a8d5e042564d0c8ccad380cc11aa1485c}
+\hypertarget{mytilewm_8c_a2970639e0c02e5990b3bd674d98a1785}{}\index{mytilewm.\+c@{mytilewm.\+c}!get\+Pixel@{get\+Pixel}}
+\index{get\+Pixel@{get\+Pixel}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{get\+Pixel}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long get\+Pixel (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{color\+Code}
+\end{DoxyParamCaption}
+)}\label{mytilewm_8c_a2970639e0c02e5990b3bd674d98a1785}
+Return a pixel with the given color. \hypertarget{mytilewm_8c_a01bd2b6f5f8a5acf7a702ece451b6f1b}{}\index{mytilewm.\+c@{mytilewm.\+c}!grab\+Buttons@{grab\+Buttons}}
+\index{grab\+Buttons@{grab\+Buttons}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{grab\+Buttons}]{\setlength{\rightskip}{0pt plus 5cm}void grab\+Buttons (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a01bd2b6f5f8a5acf7a702ece451b6f1b}
+\textquotesingle{}Grab\textquotesingle{} the mouse buttons that the program will use. \hypertarget{mytilewm_8c_a6a75e9b62aab932c6c357262257d370f}{}\index{mytilewm.\+c@{mytilewm.\+c}!grab\+Keys@{grab\+Keys}}
+\index{grab\+Keys@{grab\+Keys}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{grab\+Keys}]{\setlength{\rightskip}{0pt plus 5cm}void grab\+Keys (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a6a75e9b62aab932c6c357262257d370f}
+\textquotesingle{}Grab\textquotesingle{} the keys that the program will use. \hypertarget{mytilewm_8c_aa021adb516c76d35050d5595d08193ca}{}\index{mytilewm.\+c@{mytilewm.\+c}!hstack@{hstack}}
+\index{hstack@{hstack}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{hstack}]{\setlength{\rightskip}{0pt plus 5cm}void hstack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_aa021adb516c76d35050d5595d08193ca}
+Tile windows in \textquotesingle{}horizontal stack\textquotesingle{} style (flipped version of vertical stack). \hypertarget{mytilewm_8c_ac95c2429dd3c26f2e268fa99e2c216f7}{}\index{mytilewm.\+c@{mytilewm.\+c}!increase\+Gaps@{increase\+Gaps}}
+\index{increase\+Gaps@{increase\+Gaps}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{increase\+Gaps}]{\setlength{\rightskip}{0pt plus 5cm}void increase\+Gaps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_ac95c2429dd3c26f2e268fa99e2c216f7}
+Increase the value of the G\+A\+P value (gaps between tiled windows) by G\+A\+P\+S\+\_\+\+I\+N\+C, and apply the change by retiling.
+
+-- Add bounds checking \hypertarget{mytilewm_8c_ae3034c6b044829ed4e022f982728a5fa}{}\index{mytilewm.\+c@{mytilewm.\+c}!increase\+Main@{increase\+Main}}
+\index{increase\+Main@{increase\+Main}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{increase\+Main}]{\setlength{\rightskip}{0pt plus 5cm}void increase\+Main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_ae3034c6b044829ed4e022f982728a5fa}
+Increase the size of the main window (horizontally) while tiled, then retile. \hypertarget{mytilewm_8c_a5912ffa4b667b245b407b3b5e7a86a2a}{}\index{mytilewm.\+c@{mytilewm.\+c}!key\+Press\+Event@{key\+Press\+Event}}
+\index{key\+Press\+Event@{key\+Press\+Event}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{key\+Press\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void key\+Press\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a5912ffa4b667b245b407b3b5e7a86a2a}
+For the handling of a \textquotesingle{}Keypress\textquotesingle{} event when it is received in the event loop. Catches the key combination pressed, and takes the appropriate action. \hypertarget{mytilewm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\index{mytilewm.\+c@{mytilewm.\+c}!main@{main}}
+\index{main@{main}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{mytilewm_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}
+The main function initializes a display, grabs keys and buttons, selects which X\+Events to listen for, and runs the event loop. \hypertarget{mytilewm_8c_a7634a382292bb511acf06c941bd66ed6}{}\index{mytilewm.\+c@{mytilewm.\+c}!map\+Request\+Event@{map\+Request\+Event}}
+\index{map\+Request\+Event@{map\+Request\+Event}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{map\+Request\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void map\+Request\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a7634a382292bb511acf06c941bd66ed6}
+For the handling of a \textquotesingle{}Map\+Request\textquotesingle{} X\+Event when it is received in the event loop. \hypertarget{mytilewm_8c_a1df6ccbcef300ae05e460104bb685f5b}{}\index{mytilewm.\+c@{mytilewm.\+c}!motion\+Notify\+Event@{motion\+Notify\+Event}}
+\index{motion\+Notify\+Event@{motion\+Notify\+Event}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{motion\+Notify\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void motion\+Notify\+Event (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a1df6ccbcef300ae05e460104bb685f5b}
+For the handling of a \textquotesingle{}Motion\+Notify\textquotesingle{} X\+Event when it is received in the event loop. \hypertarget{mytilewm_8c_a0754204d6bad58bb8f7d3e05d938b6a8}{}\index{mytilewm.\+c@{mytilewm.\+c}!move\+Next@{move\+Next}}
+\index{move\+Next@{move\+Next}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{move\+Next}]{\setlength{\rightskip}{0pt plus 5cm}void move\+Next (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{current}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a0754204d6bad58bb8f7d3e05d938b6a8}
+Move the window one position forward in the list. Note that the Nodes in in the list are not actually swapped, only a \hyperlink{structNode}{Node}\textquotesingle{}s win\+I\+D. \hypertarget{mytilewm_8c_a82c52a525194d607a73acff738eb3fe4}{}\index{mytilewm.\+c@{mytilewm.\+c}!move\+Prev@{move\+Prev}}
+\index{move\+Prev@{move\+Prev}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{move\+Prev}]{\setlength{\rightskip}{0pt plus 5cm}void move\+Prev (
+\begin{DoxyParamCaption}
+\item[{{\bf Node} $\ast$}]{current}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a82c52a525194d607a73acff738eb3fe4}
+Move the window one position backward in the list. Note that the Nodes in in the list are not actually swapped, only a \hyperlink{structNode}{Node}\textquotesingle{}s win\+I\+D. \hypertarget{mytilewm_8c_a9e3b20d32b8ac810123bf75dc5247410}{}\index{mytilewm.\+c@{mytilewm.\+c}!send\+Destroy\+Message@{send\+Destroy\+Message}}
+\index{send\+Destroy\+Message@{send\+Destroy\+Message}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{send\+Destroy\+Message}]{\setlength{\rightskip}{0pt plus 5cm}void send\+Destroy\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a9e3b20d32b8ac810123bf75dc5247410}
+Send a message to a client in hopes that it will close itself properly rather than simply killing the process. \hypertarget{mytilewm_8c_a24b48bcda29b6ca2565c3cac5a09c13f}{}\index{mytilewm.\+c@{mytilewm.\+c}!swap\+Window\+Attributes@{swap\+Window\+Attributes}}
+\index{swap\+Window\+Attributes@{swap\+Window\+Attributes}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{swap\+Window\+Attributes}]{\setlength{\rightskip}{0pt plus 5cm}void swap\+Window\+Attributes (
+\begin{DoxyParamCaption}
+\item[{Window}]{x, }
+\item[{Window}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a24b48bcda29b6ca2565c3cac5a09c13f}
+Swaps window information, in other words, Window x will now have the coordinates and dimensions of Window y, and vice-\/versa. \hypertarget{mytilewm_8c_adf450a9a061d173710964aa7b86598b1}{}\index{mytilewm.\+c@{mytilewm.\+c}!tile@{tile}}
+\index{tile@{tile}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{tile}]{\setlength{\rightskip}{0pt plus 5cm}void tile (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_adf450a9a061d173710964aa7b86598b1}
+Select the tiling layout based on \textquotesingle{}layout\+Mode\textquotesingle{} and tile the windows accordingly. \hypertarget{mytilewm_8c_a258c78014043054d707f52202bc55929}{}\index{mytilewm.\+c@{mytilewm.\+c}!update\+Focus@{update\+Focus}}
+\index{update\+Focus@{update\+Focus}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{update\+Focus}]{\setlength{\rightskip}{0pt plus 5cm}void update\+Focus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_a258c78014043054d707f52202bc55929}
+When the list of windows is altered -- by a deletion, for example -- the focus Must be updated. This involves setting the input focus with X\+Set\+Input\+Focus(), updating \textquotesingle{}curr\+Focus\textquotesingle{}, updating various window borders to indicate focus, and raising the newly focused window. \hypertarget{mytilewm_8c_aaa22252f63245b6620b8a912d327261f}{}\index{mytilewm.\+c@{mytilewm.\+c}!vstack@{vstack}}
+\index{vstack@{vstack}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{vstack}]{\setlength{\rightskip}{0pt plus 5cm}void vstack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{mytilewm_8c_aaa22252f63245b6620b8a912d327261f}
+Tile windows in the classic \textquotesingle{}vertical stack\textquotesingle{} layout.
+
+-- Try to redesign algorithm so tiling is done in single for loop. 
+
+\subsection{Variable Documentation}
+\hypertarget{mytilewm_8c_a30c736fe26c351d7527f97c07646d70d}{}\index{mytilewm.\+c@{mytilewm.\+c}!attrs@{attrs}}
+\index{attrs@{attrs}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{attrs}]{\setlength{\rightskip}{0pt plus 5cm}X\+Window\+Attributes attrs}\label{mytilewm_8c_a30c736fe26c351d7527f97c07646d70d}
+\hypertarget{mytilewm_8c_a5819dbc2d305e99e930c734a0d28bc3b}{}\index{mytilewm.\+c@{mytilewm.\+c}!buffer@{buffer}}
+\index{buffer@{buffer}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}char buffer\mbox{[}20\mbox{]}}\label{mytilewm_8c_a5819dbc2d305e99e930c734a0d28bc3b}
+\hypertarget{mytilewm_8c_a52a25bb51473f2562b9d2b921d68ac52}{}\index{mytilewm.\+c@{mytilewm.\+c}!buffer\+Len@{buffer\+Len}}
+\index{buffer\+Len@{buffer\+Len}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{buffer\+Len}]{\setlength{\rightskip}{0pt plus 5cm}int buffer\+Len = 20}\label{mytilewm_8c_a52a25bb51473f2562b9d2b921d68ac52}
+\hypertarget{mytilewm_8c_a7ab2edaf0279b16f5da849b9acb7fdcb}{}\index{mytilewm.\+c@{mytilewm.\+c}!compose@{compose}}
+\index{compose@{compose}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{compose}]{\setlength{\rightskip}{0pt plus 5cm}X\+Compose\+Status compose}\label{mytilewm_8c_a7ab2edaf0279b16f5da849b9acb7fdcb}
+\hypertarget{mytilewm_8c_a72b81f09bfa24192687a65d96f71705f}{}\index{mytilewm.\+c@{mytilewm.\+c}!curr\+Focus@{curr\+Focus}}
+\index{curr\+Focus@{curr\+Focus}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{curr\+Focus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ curr\+Focus}\label{mytilewm_8c_a72b81f09bfa24192687a65d96f71705f}
+\hypertarget{mytilewm_8c_a7d43b3edf58f8d85a89852ab95b740f6}{}\index{mytilewm.\+c@{mytilewm.\+c}!dpy@{dpy}}
+\index{dpy@{dpy}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{dpy}]{\setlength{\rightskip}{0pt plus 5cm}Display$\ast$ dpy}\label{mytilewm_8c_a7d43b3edf58f8d85a89852ab95b740f6}
+\hypertarget{mytilewm_8c_ad695247486d89834d82f80cea4f163dd}{}\index{mytilewm.\+c@{mytilewm.\+c}!event@{event}}
+\index{event@{event}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{event}]{\setlength{\rightskip}{0pt plus 5cm}X\+Event event}\label{mytilewm_8c_ad695247486d89834d82f80cea4f163dd}
+\hypertarget{mytilewm_8c_a2addc5f5fab651284199528b83cd61c8}{}\index{mytilewm.\+c@{mytilewm.\+c}!first@{first}}
+\index{first@{first}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{first}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ first}\label{mytilewm_8c_a2addc5f5fab651284199528b83cd61c8}
+Implementations of functions for manipulating a doubly, circular linked list holding X\+Lib Window I\+Ds. \hypertarget{mytilewm_8c_ab9f00ec98f2f4c985581d76b371229e0}{}\index{mytilewm.\+c@{mytilewm.\+c}!G\+A\+P@{G\+A\+P}}
+\index{G\+A\+P@{G\+A\+P}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{G\+A\+P}]{\setlength{\rightskip}{0pt plus 5cm}int G\+A\+P}\label{mytilewm_8c_ab9f00ec98f2f4c985581d76b371229e0}
+\hypertarget{mytilewm_8c_a28c6802e719f9b9ec42e06af122b1b48}{}\index{mytilewm.\+c@{mytilewm.\+c}!key\+A\+S\+C\+I\+I@{key\+A\+S\+C\+I\+I}}
+\index{key\+A\+S\+C\+I\+I@{key\+A\+S\+C\+I\+I}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{key\+A\+S\+C\+I\+I}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ key\+A\+S\+C\+I\+I}\label{mytilewm_8c_a28c6802e719f9b9ec42e06af122b1b48}
+\hypertarget{mytilewm_8c_a30c30b66c984b57e5f0c7e8148c49d43}{}\index{mytilewm.\+c@{mytilewm.\+c}!keysym@{keysym}}
+\index{keysym@{keysym}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{keysym}]{\setlength{\rightskip}{0pt plus 5cm}Key\+Sym keysym}\label{mytilewm_8c_a30c30b66c984b57e5f0c7e8148c49d43}
+\hypertarget{mytilewm_8c_a16ac028724e4fd7016faa38928658477}{}\index{mytilewm.\+c@{mytilewm.\+c}!last@{last}}
+\index{last@{last}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{last}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ last}\label{mytilewm_8c_a16ac028724e4fd7016faa38928658477}
+\hypertarget{mytilewm_8c_a6687b37b92a0d3ec90d179844f7c4e84}{}\index{mytilewm.\+c@{mytilewm.\+c}!layout\+Mode@{layout\+Mode}}
+\index{layout\+Mode@{layout\+Mode}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{layout\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Tiling\+Algorithms} layout\+Mode}\label{mytilewm_8c_a6687b37b92a0d3ec90d179844f7c4e84}
+\hypertarget{mytilewm_8c_ae615d5edd10587517b0daa1fe5179538}{}\index{mytilewm.\+c@{mytilewm.\+c}!P\+A\+N@{P\+A\+N}}
+\index{P\+A\+N@{P\+A\+N}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{P\+A\+N}]{\setlength{\rightskip}{0pt plus 5cm}int P\+A\+N}\label{mytilewm_8c_ae615d5edd10587517b0daa1fe5179538}
+\hypertarget{mytilewm_8c_a67efd2aa4387dcb1b33df1f044512a16}{}\index{mytilewm.\+c@{mytilewm.\+c}!root@{root}}
+\index{root@{root}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{root}]{\setlength{\rightskip}{0pt plus 5cm}Window root}\label{mytilewm_8c_a67efd2aa4387dcb1b33df1f044512a16}
+\hypertarget{mytilewm_8c_a3109b0889cec9f0de874a2bdc1f84372}{}\index{mytilewm.\+c@{mytilewm.\+c}!screen@{screen}}
+\index{screen@{screen}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{screen}]{\setlength{\rightskip}{0pt plus 5cm}int screen}\label{mytilewm_8c_a3109b0889cec9f0de874a2bdc1f84372}
+\hypertarget{mytilewm_8c_a5645d18f6655d7fe1c4e9295024d40a1}{}\index{mytilewm.\+c@{mytilewm.\+c}!screen\+Height@{screen\+Height}}
+\index{screen\+Height@{screen\+Height}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{screen\+Height}]{\setlength{\rightskip}{0pt plus 5cm}unsigned screen\+Height}\label{mytilewm_8c_a5645d18f6655d7fe1c4e9295024d40a1}
+\hypertarget{mytilewm_8c_a6a5a4b0e8a4d8d3c4c28d75f38365702}{}\index{mytilewm.\+c@{mytilewm.\+c}!screen\+Width@{screen\+Width}}
+\index{screen\+Width@{screen\+Width}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{screen\+Width}]{\setlength{\rightskip}{0pt plus 5cm}unsigned screen\+Width}\label{mytilewm_8c_a6a5a4b0e8a4d8d3c4c28d75f38365702}
+\hypertarget{mytilewm_8c_a9420e02878dee7e6c5c82b04f33ecdc2}{}\index{mytilewm.\+c@{mytilewm.\+c}!start@{start}}
+\index{start@{start}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}X\+Button\+Event start}\label{mytilewm_8c_a9420e02878dee7e6c5c82b04f33ecdc2}
+\hypertarget{mytilewm_8c_a892b640a9383f2428cade971e1164819}{}\index{mytilewm.\+c@{mytilewm.\+c}!window\+Count@{window\+Count}}
+\index{window\+Count@{window\+Count}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{window\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int window\+Count}\label{mytilewm_8c_a892b640a9383f2428cade971e1164819}
+\hypertarget{mytilewm_8c_aeb497ff04fbbc6b79cece8980bf2ef36}{}\index{mytilewm.\+c@{mytilewm.\+c}!workspaces@{workspaces}}
+\index{workspaces@{workspaces}!mytilewm.\+c@{mytilewm.\+c}}
+\subsubsection[{workspaces}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Workspace} workspaces\mbox{[}{\bf N\+U\+M\+\_\+\+W\+O\+R\+K\+S\+P\+A\+C\+E\+S}\mbox{]}}\label{mytilewm_8c_aeb497ff04fbbc6b79cece8980bf2ef36}
