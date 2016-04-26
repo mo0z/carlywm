@@ -1,7 +1,7 @@
 #include "workspaces.h"
 #include "config.h"
 
-Workspace *workspaces[NUM_WORKSPACES];
+extern Workspace *workspaces[NUM_WORKSPACES];
 extern Display *dpy;
 extern enum TilingAlgorithms {VSTACK, HSTACK, COLS, FULLSCREEN, FLOATING};
 extern enum TilingAlgorithms layout_mode;

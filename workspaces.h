@@ -15,12 +15,6 @@ typedef struct Workspace Workspace;
 #include "linkedlist.h"
 #include <stdio.h>
 
-/********
-extern Node *first;
-extern Node *last;
-extern Node *curr_focus;
-extern int floating_ct;
-*/
 
 /**
  * A workspace contains a list of windows. It also contains information about
