@@ -28,6 +28,7 @@ struct Workspace {
      Node *curr_focus;                  // Currently focused window in this workspace
      int layout_mode;                   // Current layout mode in this workspace
      int pos;                           // The number associated with this workspace
+     int g;
 };
 
 void save_workspace_state(Workspace *curr_workspace);

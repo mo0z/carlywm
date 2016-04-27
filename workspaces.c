@@ -10,6 +10,7 @@ extern Node *last;
 extern Node *curr_focus;
 extern int float_ct;
 extern int win_ct;
+extern int GAP;
 extern Workspace *curr_workspace;
 
 
@@ -21,6 +22,7 @@ void save_workspace_state(Workspace *curr_workspace)
      curr_workspace->curr_focus = curr_focus;
      curr_workspace->last = last;
      curr_workspace->layout_mode = layout_mode;
+     curr_workspace->g = GAP;
 }
 
 void restore_workspace_state(Workspace *curr_workspace)
@@ -31,6 +33,7 @@ void restore_workspace_state(Workspace *curr_workspace)
      curr_focus = curr_workspace->curr_focus;
      last = curr_workspace->last;
      layout_mode = curr_workspace->layout_mode;
+     GAP = curr_workspace->g;
 
 }
 
@@ -72,6 +75,7 @@ void switch_workspace(int src_workspace, int dest_workspace)
      curr_workspace->curr_focus = curr_focus;
      curr_workspace->last = last;
      curr_workspace->layout_mode = layout_mode;
+     curr_workspace->g = GAP;
 
      Node *curr = curr_workspace->first;
      
@@ -90,6 +94,7 @@ void switch_workspace(int src_workspace, int dest_workspace)
      curr_focus = curr_workspace->curr_focus;
      last = curr_workspace->last;
      layout_mode = curr_workspace->layout_mode;
+     GAP = curr_workspace->g;
 
      curr = curr_workspace->first;
      
