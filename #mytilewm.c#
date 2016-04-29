@@ -100,7 +100,7 @@ static void grab_keys();
 static void grab_buttons();
 static void cycle_layouts();
 static void send_destroy_msg();
-
+static void destroy_notify_event();   
 static void key_press_event();
 static void button_press_event();
 static void motion_notify_event();
@@ -417,7 +417,7 @@ void destroy_notify_event()
 	  XKillClient(dpy, win_id);
      }
 
-     if (win_ct && layout_mode != FLOATING) {
+
 	  tile();
      }
 	       
@@ -1122,9 +1122,9 @@ void vstack()
      /* Special case: one window */
      if (tile_ct == 1) {
 	  XMoveResizeWindow(dpy, first->win_id,
-			    0 + (GAP) - 2,
+			    0 + (GAP),
 			    0 + (GAP) + PAN,
-			    screen_width - (2 * GAP) + 4,
+			    screen_width - (2 * GAP) - 2,
 			    screen_height - (2 * GAP) - PAN);
      }
      else {
@@ -1142,9 +1142,9 @@ void vstack()
 	       /* Main window (half the screen space) */
 	       if (curr->next == first) {
 		    XMoveResizeWindow(dpy, curr->win_id,
-				      0 + (GAP) - 2,
+				      0 + (GAP),
 				      0 + (GAP) + PAN,
-				      MAIN_SZ - (2 * GAP) + 4,
+				      MAIN_SZ - (2 * GAP) - 2,
 				      screen_height - (2 * GAP) - PAN);
 	       }
 	       else {
@@ -1154,16 +1154,16 @@ void vstack()
 		    
 		    if (i == 0) {
 			 XMoveResizeWindow(dpy, curr->win_id,       
-					   MAIN_SZ + 4,
+					   MAIN_SZ,
 					   new_y + GAP + PAN,  
-					   (screen_width - MAIN_SZ) - GAP - 4,
+					   (screen_width - MAIN_SZ) - GAP - 2,
 					   new_h - (2 * GAP) - PAN);
 		    }
 		    else if (i > 0) {
 			 XMoveResizeWindow(dpy, curr->win_id, 
-					   MAIN_SZ + 4,
+					   MAIN_SZ ,
 					   new_y,           
-					   (screen_width - MAIN_SZ) - GAP - 4,
+					   (screen_width - MAIN_SZ) - GAP - 2,
 					   new_h - GAP);        
 		    }
 		    

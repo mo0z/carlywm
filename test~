@@ -1,3 +1,4 @@
+#!/bin/bash
 # Testing xinitrc for running my wm in a separate X session rather than with Xephyr
 
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
@@ -27,5 +28,5 @@ compton&
 sh ~/.fehbg & 
 
 # Run the window manager
-exec /home/pjm/capstonewm/tilewm
+#exec /home/pjm/capstonewm/tilewm
 

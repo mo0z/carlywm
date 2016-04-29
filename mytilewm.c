@@ -610,9 +610,9 @@ void motion_notify_event()
 void key_press_event()
 {
      XLookupString(&event.xkey, buffer, bufferLen, &keysym, &compose);
-/*     keyASCII = XKeysymToString(keysym);
+     keyASCII = XKeysymToString(keysym);
        printf("Key: %s, KeySym: %d \n", keyASCII, (int) keysym);
-       fflush(stdout);*/
+       fflush(stdout);
 	       
      switch(keysym) {
 
