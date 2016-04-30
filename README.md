@@ -3,11 +3,11 @@
 Screenshots
 -----------
 
-#![...](https://github.com/p-j-m/capstonewm/blob/master/screenshots/s7.ppng)
+#![...](https://github.com/p-j-m/capstonewm/blob/master/screenshots/s7.png)
 
 Horizontal stack layout with massive gaps between windows:
 
-#![...](https://github.com/p-j-m/capstonewm/blob/master/screenshots/s3.ppng)
+#![...](https://github.com/p-j-m/capstonewm/blob/master/screenshots/s3.png)
 
 Columns layout:
 
@@ -19,5 +19,5 @@ Vertical stack layout:
 
 Floating mode:
 
-#![...](https://github.com/p-j-m/capstonewm/blob/master/screenshots/s4.ppng)
+#![...](https://github.com/p-j-m/capstonewm/blob/master/screenshots/s4.png)
 
