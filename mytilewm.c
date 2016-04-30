@@ -339,7 +339,7 @@ void grab_keys()
      XGrabKey(dpy, get_key_code("m"), ALT, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("q"), ALT, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("F"), ALT|SHIFT, root, True, GrabModeAsync, GrabModeAsync);    
-//     XGrabKey(dpy, get_key_code("Shift_L"), AnyModifier, root, True, GrabModeAsync, GrabModeAsync);
+     XGrabKey(dpy, get_key_code("Shift_L"), AnyModifier, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("Right"), ALT, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("Left"), ALT, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("Up"), ALT, root, True, GrabModeAsync, GrabModeAsync);

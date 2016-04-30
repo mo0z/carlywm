@@ -339,7 +339,7 @@ void grab_keys()
      XGrabKey(dpy, get_key_code("m"), ALT, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("q"), ALT, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("F"), ALT|SHIFT, root, True, GrabModeAsync, GrabModeAsync);    
-//     XGrabKey(dpy, get_key_code("Shift_L"), AnyModifier, root, True, GrabModeAsync, GrabModeAsync);
+     XGrabKey(dpy, get_key_code("Shift_L"), AnyModifier, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("Right"), ALT, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("Left"), ALT, root, True, GrabModeAsync, GrabModeAsync);
      XGrabKey(dpy, get_key_code("Up"), ALT, root, True, GrabModeAsync, GrabModeAsync);
@@ -417,7 +417,7 @@ void destroy_notify_event()
 	  XKillClient(dpy, win_id);
      }
 
-
+     if (win_ct && layout_mode != FLOATING) {
 	  tile();
      }
 	       
@@ -610,9 +610,9 @@ void motion_notify_event()
 void key_press_event()
 {
      XLookupString(&event.xkey, buffer, bufferLen, &keysym, &compose);
-/*     keyASCII = XKeysymToString(keysym);
+     keyASCII = XKeysymToString(keysym);
        printf("Key: %s, KeySym: %d \n", keyASCII, (int) keysym);
-       fflush(stdout);*/
+       fflush(stdout);
 	       
      switch(keysym) {
 
