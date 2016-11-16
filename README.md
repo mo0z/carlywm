@@ -1,5 +1,7 @@
 # carlywm
 
+!#[...](https://github.com/patjm1992/carlywm/blob/master/screenshots/wm.jpg)
+
 About
 -----
 
@@ -18,9 +20,9 @@ Configuration
 Screenshots
 -----------
 
-#![...](https://github.com/patjm1992/capstonewm/blob/master/screenshots/s7.png)
-#![...](https://github.com/patjm1992/capstonewm/blob/master/screenshots/s8.png)
-#![...](https://github.com/patjm1992/capstonewm/blob/master/screenshots/s4.png)
+#![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s7.png)
+#![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s8.png)
+#![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s4.png)
 
 
 Configuration
@@ -30,7 +32,7 @@ Configuration
 Extended Window Manager Hints
 -----------------------------
 
-This is *kinda* there, at this point. Enough to feed the number of workspaces and the current workspace to a status bar or whatever you want.
+This is *kinda* there, at this point. Enough to feed the number of workspaces and the current workspace to a status bar or whatever you want. It also should recognize transient windows, such as an application launcher like [rofi](https://github.com/DaveDavenport/rofi).
 
 Status
 ------
