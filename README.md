@@ -1,6 +1,6 @@
 # carlywm
 
-!#[...](https://github.com/patjm1992/carlywm/blob/master/screenshots/wm.jpg)
+#![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/wm.jpg)
 
 About
 -----
