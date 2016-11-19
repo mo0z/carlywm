@@ -134,7 +134,7 @@ This is kinda there, at this point. Enough to feed the number of workspaces and 
 Status/To-do
 ------------
 
-This project is put on pause for the time being while I pursue other things.
+
 
 + bugfixes
 + more EWMH support
@@ -143,6 +143,8 @@ This project is put on pause for the time being while I pursue other things.
 + 'true' fullscreen
 + keybinding configuration
 + installation instructions
+
+This project is put on pause for the time being while I pursue other things.
 
 <hr>
 
