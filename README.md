@@ -13,6 +13,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/1.gif)
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/2.gif)
+#![...](https://github.com/patjm1992/carlywm/blob/master/other/3.gif)
 
 [Full video link](http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo).
 
@@ -55,6 +56,44 @@ Configuration
 -------------
 
 There's a very basic file, **config.h**, where you can configure things like whether there are gaps or not, or the increment in which windows resize. You'll have to recompile after making changes, of course.
+
+It's pretty simple:
+
+```C
+/* Size of the "Main" window in tiled layouts (percentage) */
+#define MAIN_WIN_SIZE         0.50
+
+/* Size of window borders */
+#define BORDER                2
+
+/* Whether or not there are gaps between windows */
+#define GAPS                  1
+
+/* Size of gaps */
+#define GAP_SIZE              12
+
+/* How much to adjust gaps by per keypress */
+#define GAPS_INC              1
+
+/* Whether there is a panel */
+#define PANEL                 1
+
+/* Height of panel */
+#define PANEL_HEIGHT          16
+
+/* Increment to resize by when resizing in tiling mode */
+#define RESIZE_INC            20
+
+/* The number of workspaces */
+#define NUM_WORKSPACES        5
+
+/* Focus/Unfocus colors */
+#define FOCUSED               "#989898"
+#define UNFOCUSED "#232c33"
+```
+
+& c.
+
 
 Screenshots
 -----------
