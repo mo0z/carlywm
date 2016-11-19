@@ -12,13 +12,18 @@ It's named after [this lovely person](http://www.imdb.com/name/nm4379768/).
 Features
 --------
 
- It's better to see how it works than to read about it, so watch the demos!
+ It's better to see how it works than to read about it, so watch the demos below!
 
 <!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo
 " target="_blank"><img src="http://img.youtube.com/vi/ZxCnU6D8TNo/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
+### Tiling, gaps, and focus switching
+
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/1.gif)
+
+###
+
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/3.gif)
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/2.gif)
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/4.gif)
