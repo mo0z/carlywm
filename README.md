@@ -27,8 +27,6 @@ Screenshots
 #![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s4.png)
 
 
-Configuration
--------------
 
 
 Extended Window Manager Hints
