@@ -20,7 +20,7 @@ Modes
 
 The classic *Vertical Stack*:
 
-<img src="other/masterstack.png" alt="Drawing" style="width: 50px;"/>
+#![...](https://github.com/patjm1992/carlywm/blob/master/other/masterstack.png | width=100)
 
 The not-so-classic-but-obligatory *Horizontal Stack*:
 
