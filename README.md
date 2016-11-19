@@ -11,7 +11,7 @@ A simple dynamic tiling window manager written in C and Xlib that can also float
 " target="_blank"><img src="http://img.youtube.com/vi/ZxCnU6D8TNo/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
-[![...](https://j.gifs.com/r0XEnp.gif)]
+[![...](https://j.gifs.com/r0XEnp.gif)
 
 [Full video link](http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo).
 
