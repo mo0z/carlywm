@@ -5,7 +5,7 @@
 About
 -----
 
-*carlywm* is a simple dynamic tiling window manager written. It's written entirely in C and uses the monolithic library Xlib to interact with the X server. It's not totally tiling purist -- *carlywm* supports floating windows (it'll tile and float at the same time if that's your thing, actually). Like most other tiling WMs, it's keyboard-driven, fast, and a lot of fun.
+*carlywm* is a simple dynamic tiling window manager for OSs using X as a windowing system (Linux, BSD, etc). It's written entirely in C and uses the monolithic library Xlib<sup>[1](#footy)</sup> to interact with an X server. It's not totally tiling purist -- *carlywm* supports floating windows (it'll tile and float at the same time if that's your thing, actually). Like most other tiling WMs, it's keyboard-driven, fast, and a lot of fun.
 
 It's affectionately named after [this lovely ~~goofball~~ person](http://www.imdb.com/name/nm4379768/).
 
@@ -132,7 +132,7 @@ Extended Window Manager Hints
 This is kinda there, at this point. Enough to feed the number of workspaces and the current workspace to a status bar or whatever you want. It also should recognize transient windows, such as an application launcher like [rofi](https://github.com/DaveDavenport/rofi).
 
 Status/To-do
-------
+------------
 
 This project is put on pause for the time being while I pursue other things.
 
@@ -143,3 +143,7 @@ This project is put on pause for the time being while I pursue other things.
 + 'true' fullscreen
 + keybinding configuration
 + installation instructions
+
+<hr>
+
+<a name="footy">1</a>: hoot
