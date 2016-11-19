@@ -14,7 +14,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/1.gif)
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/3.gif)
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/2.gif)
-
+#![...](https://github.com/patjm1992/carlywm/blob/master/other/4.gif)
 
 [Full video link](http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo).
 
@@ -102,7 +102,7 @@ Installation
 Extended Window Manager Hints
 -----------------------------
 
-This is *kinda* there, at this point. Enough to feed the number of workspaces and the current workspace to a status bar or whatever you want. It also should recognize transient windows, such as an application launcher like [rofi](https://github.com/DaveDavenport/rofi).
+This is kinda there, at this point. Enough to feed the number of workspaces and the current workspace to a status bar or whatever you want. It also should recognize transient windows, such as an application launcher like [rofi](https://github.com/DaveDavenport/rofi).
 
 Status/To-do
 ------
