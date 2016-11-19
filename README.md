@@ -20,7 +20,7 @@ Modes
 
 The classic *Vertical Stack*:
 
-<img src="other/masterstack.png" alt="Drawing" style="width: 200px;"/>
+<img src="other/masterstack.png" alt="Drawing" style="width: 50px;"/>
 
 The not-so-classic-but-obligatory *Horizontal Stack*:
 
