@@ -89,7 +89,7 @@ It's pretty simple:
 
 /* Focus/Unfocus colors */
 #define FOCUSED               "#989898"
-#define UNFOCUSED "#232c33"
+#define UNFOCUSED             "#232c33"
 ```
 
 & c.
