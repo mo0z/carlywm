@@ -12,7 +12,7 @@ It's affectionately named after [this lovely ~~goofball~~ person](http://www.imd
 Features
 --------
 
- It's better to see how it works than to read about it, so watch the demos below!
+ It's better to see how it works than to read about it, so check out the demos:
 
 <!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo
 " target="_blank"><img src="http://img.youtube.com/vi/ZxCnU6D8TNo/0.jpg"
