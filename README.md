@@ -16,10 +16,24 @@ I run it with a simple status bar (as seen in screenshots), [lemonbar](https://g
 Modes
 -----
 
+*carlywm* supports a few different tiling/floating modes that I found useful.
+
+The classic *Vertical Stack*:
+
+The not-so-classic-but-obligatory *Horizontal Stack*:
+
+*Columns*:
+
+*Full Screen*:
+
+*Floating*:
+
+*Mixed floating/tiling*:
+
 Configuration
 -------------
 
-There's a very basic file, **config.h**, where you can configure things like whether there are gaps or not, or the increment in which windows resize.
+There's a very basic file, **config.h**, where you can configure things like whether there are gaps or not, or the increment in which windows resize. You'll have to recompile after making changes, of course.
 
 Screenshots
 -----------
