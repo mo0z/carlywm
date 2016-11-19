@@ -75,15 +75,6 @@ It's pretty simple:
 /* How much to adjust gaps by per keypress */
 #define GAPS_INC              1
 
-/* Whether there is a panel */
-#define PANEL                 1
-
-/* Height of panel */
-#define PANEL_HEIGHT          16
-
-/* Increment to resize by when resizing in tiling mode */
-#define RESIZE_INC            20
-
 /* The number of workspaces */
 #define NUM_WORKSPACES        5
 
