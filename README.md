@@ -12,8 +12,9 @@ About
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/1.gif)
-#![...](https://github.com/patjm1992/carlywm/blob/master/other/2.gif)
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/3.gif)
+#![...](https://github.com/patjm1992/carlywm/blob/master/other/2.gif)
+
 
 [Full video link](http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo).
 
