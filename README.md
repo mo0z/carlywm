@@ -11,26 +11,38 @@ A simple dynamic tiling window manager written in C and Xlib that can also float
 " target="_blank"><img src="http://img.youtube.com/vi/ZxCnU6D8TNo/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
+[![...](http://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc)
+
 I run it with a simple status bar (as seen in screenshots), [lemonbar](https://github.com/LemonBoy/bar), and [feh](https://github.com/derf/feh) for setting a background.
 
-Modes
+Layouts/Modes
 -----
 
 *carlywm* supports a few different tiling/floating modes that I found useful.
 
 The classic *Vertical Stack*:
 
-<img src="other/masterstack.png" alt="Graphic of the vertical stack layout" width="100>
+<img src="other/masterstack.png" alt="Graphic of the vertical stack layout" width="125">
 
 The not-so-classic-but-obligatory *Horizontal Stack*:
 
+<img src="other/hstack.png" alt="Graphic of the horizontal stack layout" width="125">
+
 *Columns*:
+
+<img src="other/cols.png" alt="Graphic of the columns layout" width="125">
 
 *Full Screen*:
 
+<img src="other/full.png" alt="Graphic of the fullscreen layout" width="125">
+
 *Floating*:
 
+<img src="other/floatingdrop.png" alt="Graphic of the floating mode" width="125">
+
 *Mixed floating/tiling*:
+
+<img src="other/mixed.png" alt="Graphic of the mixed floating/tiling mode thing" width="125">
 
 Configuration
 -------------
