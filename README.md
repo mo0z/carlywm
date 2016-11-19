@@ -123,3 +123,4 @@ This project is put on pause for the time being while I pursue other things.
 + code cleanup (*bigtime*)
 + vertical resizing
 + keybinding configuration
++ installation instructions
