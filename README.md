@@ -5,17 +5,19 @@
 About
 -----
 
-A simple dynamic tiling window manager written in C and Xlib that can also float windows (and can do both at the same time, actually). Like most other tiling WMs, it's keyboard-driven. It's better to see how it works than to read about it, so watch the video:
+A simple dynamic tiling window manager written in C and Xlib that can also float windows (and can do both at the same time, actually). Like most other tiling WMs, it's keyboard-driven. It's better to see how it works than to read about it, so watch the demos:
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo
+<!-- <a href="http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo
 " target="_blank"><img src="http://img.youtube.com/vi/ZxCnU6D8TNo/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
 [![...](https://j.gifs.com/r0XEnp.gif)]
 
+[Full video link](http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo).
+
 <!-- [![...](http://share.gifyoutube.com/KzB6Gb.gif)](https://www.youtube.com/watch?v=ek1j272iAmc) -->
 
-I run it with a simple status bar (as seen in screenshots), [lemonbar](https://github.com/LemonBoy/bar), and [feh](https://github.com/derf/feh) for setting a background.
+I run it with a simple status bar (as seen in screenshots), [lemonbar](https://github.com/LemonBoy/bar), and [feh](https://github.com/derf/feh) for setting a background. There's an example *.xinitrc* in the *scripts* folder.
 
 Layouts/Modes
 -----
