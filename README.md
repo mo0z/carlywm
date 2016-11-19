@@ -19,7 +19,7 @@ Modes
 Configuration
 -------------
 
-There's a very basic file where you can configure things like whether there are gaps or not, or the increment in which windows resize, **config.h**.
+There's a very basic file, **config.h**, where you can configure things like whether there are gaps or not, or the increment in which windows resize.
 
 Screenshots
 -----------
