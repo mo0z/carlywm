@@ -5,7 +5,7 @@
 About
 -----
 
-*carlywm* is a simple dynamic tiling window manager written in C and Xlib that can also float windows (and can do both at the same time, actually). Like most other tiling WMs, it's keyboard-driven.
+*carlywm* is a simple dynamic tiling window manager written. It's written entirely in C and uses the monolithic library Xlib to interact with the X server. It's not totally tiling purist -- *carlywm* supports floating windows (it'll tile and float at the same time if that's your thing, actually). Like most other tiling WMs, it's keyboard-driven, fast, and a lot of fun.
 
 It's named after [this lovely person](http://www.imdb.com/name/nm4379768/).
 
@@ -22,6 +22,8 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/3.gif)
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/2.gif)
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/4.gif)
+#![...](https://github.com/patjm1992/carlywm/blob/master/other/5.gif)
+
 
 [Full video link](http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo).
 
