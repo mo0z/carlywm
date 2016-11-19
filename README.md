@@ -52,7 +52,7 @@ I run it with a simple status bar (as seen in screenshots), [lemonbar](https://g
 Layouts/Modes
 -----
 
-*carlywm* supports a few different tiling/floating modes that I found useful.
+*carlywm* supports a few different tiling/floating modes that I find useful.
 
 The classic *Vertical Stack*:
 
