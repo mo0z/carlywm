@@ -19,14 +19,14 @@ Modes
 Configuration
 -------------
 
+There's a very basic file where you can configure things like whether there are gaps or not, or the increment in which windows resize, **config.h**.
+
 Screenshots
 -----------
 
 #![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s11.png)
 #![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s8.png)
 #![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s4.png)
-
-
 
 
 Extended Window Manager Hints
