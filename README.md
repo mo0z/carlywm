@@ -148,4 +148,4 @@ This project is put on pause for the time being while I pursue other things.
 
 <hr>
 
-<a name="footy"><sup>1</sup></a>. Xlib is as old as I am and just a hoot-and-a-holler to use: I recommend [The Xlib Programming Manual](https://tronche.com/gui/x/xlib/). Or just joining the 21<sup>st</sup> century and beating [xcb](https://xcb.freedesktop.org/) into submission.
+<a name="footy"><sup>1</sup></a> Xlib is as old as I am and just a hoot-and-a-holler to use: I recommend [The Xlib Programming Manual](https://tronche.com/gui/x/xlib/). Or just joining the 21<sup>st</sup> century and beating [xcb](https://xcb.freedesktop.org/) into submission.
