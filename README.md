@@ -5,7 +5,7 @@
 About
 -----
 
-A simple dynamic tiling window manager written in C and Xlib that can also float windows (and can do both at the same time, actually). It's better to see how it works than to read about it, so watch the video:
+A simple dynamic tiling window manager written in C and Xlib that can also float windows (and can do both at the same time, actually). Like most other tiling WMs, it's keyboard-driven. It's better to see how it works than to read about it, so watch the video:
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo
 " target="_blank"><img src="http://img.youtube.com/vi/ZxCnU6D8TNo/0.jpg"
@@ -44,6 +44,8 @@ The not-so-classic-but-obligatory *Horizontal Stack*:
 
 <img src="other/mixed.png" alt="Graphic of the mixed floating/tiling mode thing" width="125">
 
+If you're tiling and you drag a window around, it'll float and the existing windows will tile behind it, reconciling the hole left behind.
+
 Configuration
 -------------
 
@@ -56,6 +58,10 @@ Screenshots
 #![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s8.png)
 #![...](https://github.com/patjm1992/carlywm/blob/master/screenshots/s4.png)
 
+Installation
+------------
+
+*coming soon*
 
 Extended Window Manager Hints
 -----------------------------
