@@ -18,16 +18,29 @@ Features
 " target="_blank"><img src="http://img.youtube.com/vi/ZxCnU6D8TNo/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a> -->
 
-##### Tiling, gaps, and focus switching
+#### Tiling, gaps, and focus switching
 
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/1.gif)
 
-###
+#### Floating mode
 
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/3.gif)
+
+#### Putting a single window in floating mode while tiled
+
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/2.gif)
+
+#### Cycling through all the layouts
+
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/4.gif)
+
+#### Using an application launcher (i.e., handling a *transient* window
+
 #![...](https://github.com/patjm1992/carlywm/blob/master/other/5.gif)
+
+#### Horizontal resizing
+
+#![...](https://github.com/patjm1992/carlywm/blob/master/other/6.gif)
 
 
 [Full video link](http://www.youtube.com/watch?feature=player_embedded&v=ZxCnU6D8TNo).
@@ -127,5 +140,6 @@ This project is put on pause for the time being while I pursue other things.
 + more EWMH support
 + code cleanup (*bigtime*)
 + vertical resizing
++ 'true' fullscreen
 + keybinding configuration
 + installation instructions
