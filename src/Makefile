@@ -5,5 +5,5 @@ DEPS = linkedlist.h config.h workspaces.h
 %.o: %c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-tilewm: mytilewm.c
-	gcc -g -Wall -o tilewm mytilewm.c linkedlist.c workspaces.c -lX11
+tilewm: carlywm.c
+	gcc -g -Wall -o carlywm carlywm.c linkedlist.c workspaces.c -lX11
